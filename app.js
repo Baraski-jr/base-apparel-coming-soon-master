@@ -3,6 +3,7 @@ const emailLabel = document.querySelector('#email-label');
 const email = document.querySelector('#email');
 const errIcon = document.querySelector('.denger-icon ');
 const submitBtn = document.querySelector('.submit-btn');
+const errMsg = document.querySelector('feed-msg');
 const successIcon = document.querySelector('.success-icon');
 const dengerIcon = document.querySelector('.denger-icon ');
 
