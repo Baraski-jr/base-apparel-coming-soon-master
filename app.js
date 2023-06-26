@@ -3,7 +3,7 @@ const emailLabel = document.querySelector('#email-label');
 const email = document.querySelector('#email');
 const errIcon = document.querySelector('.denger-icon ');
 const submitBtn = document.querySelector('.submit-btn');
-const errMsg = document.querySelector('feed-msg');
+const errMsg = document.querySelector('.feed-msg');
 const successIcon = document.querySelector('.success-icon');
 const dengerIcon = document.querySelector('.denger-icon ');
 
@@ -41,7 +41,7 @@ function emailValidation() {
        
         emailBox.style.borderColor = 'red';
         emailLabel.style.borderColor = 'red';
-        errMsg.style.color = 'red';
+        // errMsg.style.color = 'red';
         // Action of icons
         errMsg.style.visibility = 'visible';
         dengerIcon.style.visibility = 'visible';
