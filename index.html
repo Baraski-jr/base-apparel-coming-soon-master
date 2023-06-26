@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Base Apparel coming soon page by jr-Baraski</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
+  <script src="https://kit.fontawesome.com/9991bb05ae.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -18,31 +18,35 @@
       <img src="images/logo.svg" alt="" srcset="">
     </div>
   </header>
+
+  <!-- Main content -->
   <section class="main">
     <h1 class="title">
       <span> We're </span> coming soon
     </h1>
+
     <p class="describ">
       Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
 
-    <form action="/" method="post" class="email-box">
-      <input type="email" name="email" id="email" placeholder="Email Address">
-      <button type="submit" class="denger-icon">
-        <img src="images/icon-error.svg" alt="">
-      </button>
-      <div class="submit-btn">
-        <img src="images/icon-arrow.svg" alt="">
+    <form class="email-box" method="get" action="/" onsubmit="return(emailValidation())" >
+      <label for="email" id="email-label"> Email Address</label>
+      <input type="email" spellcheck="false" name="email" id="email" onkeyup=emailValidation()>
+      <div class="feed-back-icon">
+        <img class="denger-icon" src="images/icon-error.svg" alt="denger" >
+        <img class="success-icon" src="images/check.svg" alt="denger" >
       </div>
+      <button type="submit" class="submit-btn">
+        <img src="images/icon-arrow.svg" alt="">
+      </button>
     </form>
-    <p class="erro-msg">
-      Please provide a valid email
-    </p>
+    
+    <!-- Error Message -->
+    <p class="feed-msg">Please enter a valid email</p>
   </section>
+  <!-- Image -->
   <section class="image">
-    <figure>
-    </figure>
   </section>
 </body> 
 </html>
